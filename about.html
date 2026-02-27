@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Grilli Restaurant</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <p class="preloader-text">Grilli</p>
+    </div>
+  </div>
+
+  <header class="header active" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1 class="logo-text">Grilli</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="menu.html" class="navbar-link">Menu</a></li>
+          <li><a href="about.html" class="navbar-link active">About</a></li>
+          <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+          <li><a href="booking.html" class="navbar-link">Reservations</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html" class="btn btn-primary">
+        <span>Book a Table</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="about-hero">
+      <div class="container">
+        <h1 class="page-title" data-reveal="bottom">Our Story</h1>
+        <p class="page-subtitle" data-reveal="bottom">A journey of passion, flavor, and excellence</p>
+      </div>
+    </section>
+
+    <section class="about-story">
+      <div class="container">
+        <div class="story-content" data-reveal="left">
+          <p class="section-subtitle">Since 2004</p>
+          <h2 class="section-title">Where Culinary Dreams Come True</h2>
+          <p class="section-text">
+            Grilli was born from a simple dream: to create a dining experience that celebrates the art of cooking and the joy of sharing great food with loved ones. For over two decades, we've been dedicated to this vision, crafting dishes that tell stories and create memories.
+          </p>
+          <p class="section-text">
+            Our journey began in a small kitchen with big ambitions. Today, we're proud to be recognized as one of the finest dining destinations, but our commitment remains unchanged: to serve exceptional food with genuine hospitality.
+          </p>
+          <p class="section-text">
+            Every ingredient is carefully selected, every recipe is perfected with passion, and every guest is treated like family. This is more than a restaurant—it's a celebration of culinary excellence.
+          </p>
+        </div>
+
+        <div class="story-image" data-reveal="right">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Restaurant interior">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-reveal="bottom">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-card" data-reveal="bottom">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-card" data-reveal="bottom">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Signature Dishes</div>
+          </div>
+          <div class="stat-card" data-reveal="bottom">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">Our Values</p>
+          <h2 class="section-title" data-reveal="bottom">What We Stand For</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card" data-reveal="left">
+            <div class="value-icon">
+              <ion-icon name="leaf"></ion-icon>
+            </div>
+            <h3>Fresh & Local</h3>
+            <p>We source the finest ingredients from local farmers and suppliers, ensuring freshness and supporting our community.</p>
+          </div>
+
+          <div class="value-card" data-reveal="bottom">
+            <div class="value-icon">
+              <ion-icon name="heart"></ion-icon>
+            </div>
+            <h3>Made with Love</h3>
+            <p>Every dish is prepared with passion and care, combining traditional techniques with modern innovation.</p>
+          </div>
+
+          <div class="value-card" data-reveal="right">
+            <div class="value-icon">
+              <ion-icon name="people"></ion-icon>
+            </div>
+            <h3>Guest First</h3>
+            <p>Your satisfaction is our priority. We strive to exceed expectations with every visit and create memorable experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">Meet the Team</p>
+          <h2 class="section-title" data-reveal="bottom">Our Culinary Masters</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card" data-reveal="zoom">
+            <div class="team-image">
+              <img src="https://i.pravatar.cc/400?img=33" alt="Chef">
+            </div>
+            <h3>Marco Rossi</h3>
+            <p class="team-role">Executive Chef</p>
+            <p class="team-bio">With 25 years of experience, Chef Marco brings Italian authenticity and modern flair to every dish.</p>
+            <div class="team-social">
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team-card" data-reveal="zoom">
+            <div class="team-image">
+              <img src="https://i.pravatar.cc/400?img=47" alt="Chef">
+            </div>
+            <h3>Sophie Laurent</h3>
+            <p class="team-role">Pastry Chef</p>
+            <p class="team-bio">Award-winning pastry chef specializing in French desserts and artistic presentations.</p>
+            <div class="team-social">
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team-card" data-reveal="zoom">
+            <div class="team-image">
+              <img src="https://i.pravatar.cc/400?img=15" alt="Chef">
+            </div>
+            <h3>James Chen</h3>
+            <p class="team-role">Sous Chef</p>
+            <p class="team-bio">Fusion cuisine expert blending Asian flavors with contemporary cooking techniques.</p>
+            <div class="team-social">
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team-card" data-reveal="zoom">
+            <div class="team-image">
+              <img src="https://i.pravatar.cc/400?img=20" alt="Manager">
+            </div>
+            <h3>Emma Williams</h3>
+            <p class="team-role">Restaurant Manager</p>
+            <p class="team-bio">Ensuring every guest receives exceptional service and a memorable dining experience.</p>
+            <div class="team-social">
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content" data-reveal="zoom">
+          <h2>Experience the Grilli Difference</h2>
+          <p>Join us for an unforgettable culinary journey</p>
+          <a href="booking.html" class="btn btn-secondary">
+            <span>Reserve Your Table</span>
+            <ion-icon name="calendar-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="logo-text">Grilli</h2>
+          <p>Experience culinary excellence in every bite.</p>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><ion-icon name="location-outline"></ion-icon> 123 Restaurant St, Food City</li>
+            <li><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</li>
+            <li><ion-icon name="mail-outline"></ion-icon> hello@grilli.com</li>
+            <li><ion-icon name="time-outline"></ion-icon> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grilli Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" data-back-to-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

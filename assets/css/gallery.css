@@ -1,0 +1,114 @@
+.gallery-hero {
+  padding: 8rem 0 6rem;
+  background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+  text-align: center;
+}
+
+.gallery-filters {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: var(--white);
+  color: var(--black);
+  border: 2px solid var(--light-blue);
+  border-radius: 50px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--gradient-1);
+  color: var(--white);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.gallery-grid-section {
+  padding: 6rem 0 10rem;
+}
+
+.gallery-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: var(--transition);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: var(--white);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.15);
+}
+
+.gallery-item:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-overlay h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-overlay p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .gallery-masonry {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-buttons {
+    gap: 1rem;
+  }
+  
+  .filter-btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+}

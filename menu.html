@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu - Grilli Restaurant</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <p class="preloader-text">Grilli</p>
+    </div>
+  </div>
+
+  <header class="header active" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1 class="logo-text">Grilli</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="menu.html" class="navbar-link active">Menu</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+          <li><a href="booking.html" class="navbar-link">Reservations</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html" class="btn btn-primary">
+        <span>Book a Table</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title" data-reveal="bottom">Our Exquisite Menu</h1>
+        <p class="page-subtitle" data-reveal="bottom">Discover a world of flavors crafted with passion</p>
+      </div>
+    </section>
+
+    <section class="menu-categories">
+      <div class="container">
+        <div class="category-tabs" data-reveal="bottom">
+          <button class="category-tab active" data-category="all">All</button>
+          <button class="category-tab" data-category="appetizers">Appetizers</button>
+          <button class="category-tab" data-category="mains">Main Course</button>
+          <button class="category-tab" data-category="desserts">Desserts</button>
+          <button class="category-tab" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-full-grid">
+          <!-- Appetizers -->
+          <div class="menu-card" data-category="appetizers" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Caesar Salad">
+              <div class="menu-card-badge">Popular</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Caesar Salad</h3>
+              <p>Crisp romaine lettuce, parmesan, croutons, and classic Caesar dressing</p>
+              <div class="menu-card-footer">
+                <span class="price">$14.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="appetizers" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80" alt="Bruschetta">
+            </div>
+            <div class="menu-card-content">
+              <h3>Tomato Bruschetta</h3>
+              <p>Toasted bread topped with fresh tomatoes, basil, and olive oil</p>
+              <div class="menu-card-footer">
+                <span class="price">$12.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="appetizers" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1633504581786-316c8002b1b9?w=600&q=80" alt="Calamari">
+            </div>
+            <div class="menu-card-content">
+              <h3>Crispy Calamari</h3>
+              <p>Lightly fried squid rings served with marinara sauce</p>
+              <div class="menu-card-footer">
+                <span class="price">$16.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Course -->
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza">
+              <div class="menu-card-badge">Chef's Special</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Truffle Mushroom Pizza</h3>
+              <p>Wood-fired pizza with truffle oil, wild mushrooms, and mozzarella</p>
+              <div class="menu-card-footer">
+                <span class="price">$24.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Steak">
+              <div class="menu-card-badge">Premium</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Wagyu Beef Steak</h3>
+              <p>Prime cut with roasted vegetables and red wine reduction</p>
+              <div class="menu-card-footer">
+                <span class="price">$45.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80" alt="Pasta">
+            </div>
+            <div class="menu-card-content">
+              <h3>Seafood Linguine</h3>
+              <p>Fresh pasta with prawns, mussels, clams in garlic butter sauce</p>
+              <div class="menu-card-footer">
+                <span class="price">$28.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80" alt="Sushi">
+            </div>
+            <div class="menu-card-content">
+              <h3>Premium Sushi Platter</h3>
+              <p>Assorted fresh sushi with wasabi, ginger, and soy sauce</p>
+              <div class="menu-card-footer">
+                <span class="price">$32.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&q=80" alt="Salmon">
+            </div>
+            <div class="menu-card-content">
+              <h3>Grilled Salmon</h3>
+              <p>Atlantic salmon with lemon butter sauce and asparagus</p>
+              <div class="menu-card-footer">
+                <span class="price">$34.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="mains" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80" alt="Lamb">
+            </div>
+            <div class="menu-card-content">
+              <h3>Herb Crusted Lamb</h3>
+              <p>Rack of lamb with rosemary, garlic, and mint sauce</p>
+              <div class="menu-card-footer">
+                <span class="price">$42.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-card" data-category="desserts" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Lava Cake">
+              <div class="menu-card-badge">Popular</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Chocolate Lava Cake</h3>
+              <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+              <div class="menu-card-footer">
+                <span class="price">$12.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Pancakes">
+            </div>
+            <div class="menu-card-content">
+              <h3>Blueberry Pancakes</h3>
+              <p>Fluffy pancakes with fresh blueberries and maple syrup</p>
+              <div class="menu-card-footer">
+                <span class="price">$10.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Cheesecake">
+            </div>
+            <div class="menu-card-content">
+              <h3>New York Cheesecake</h3>
+              <p>Classic creamy cheesecake with berry compote</p>
+              <div class="menu-card-footer">
+                <span class="price">$11.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-card" data-category="drinks" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Smoothie">
+            </div>
+            <div class="menu-card-content">
+              <h3>Tropical Smoothie</h3>
+              <p>Mango, pineapple, and coconut milk blend</p>
+              <div class="menu-card-footer">
+                <span class="price">$7.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="drinks" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Coffee">
+            </div>
+            <div class="menu-card-content">
+              <h3>Artisan Coffee</h3>
+              <p>Freshly brewed premium coffee beans</p>
+              <div class="menu-card-footer">
+                <span class="price">$5.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="drinks" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" alt="Cocktail">
+            </div>
+            <div class="menu-card-content">
+              <h3>Signature Cocktail</h3>
+              <p>House special mixed drink with fresh ingredients</p>
+              <div class="menu-card-footer">
+                <span class="price">$13.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="logo-text">Grilli</h2>
+          <p>Experience culinary excellence in every bite.</p>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><ion-icon name="location-outline"></ion-icon> 123 Restaurant St, Food City</li>
+            <li><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</li>
+            <li><ion-icon name="mail-outline"></ion-icon> hello@grilli.com</li>
+            <li><ion-icon name="time-outline"></ion-icon> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grilli Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" data-back-to-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/menu.js"></script>
+</body>
+</html>

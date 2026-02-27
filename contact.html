@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Grilli Restaurant</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <p class="preloader-text">Grilli</p>
+    </div>
+  </div>
+
+  <header class="header active" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1 class="logo-text">Grilli</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="menu.html" class="navbar-link">Menu</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+          <li><a href="booking.html" class="navbar-link">Reservations</a></li>
+          <li><a href="contact.html" class="navbar-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html" class="btn btn-primary">
+        <span>Book a Table</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="contact-hero">
+      <div class="container">
+        <h1 class="page-title" data-reveal="bottom">Get In Touch</h1>
+        <p class="page-subtitle" data-reveal="bottom">We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-card" data-reveal="left">
+            <div class="contact-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+            <h3>Visit Us</h3>
+            <p>123 Restaurant Street<br>Food City, FC 12345<br>United States</p>
+          </div>
+
+          <div class="contact-card" data-reveal="bottom">
+            <div class="contact-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <h3>Call Us</h3>
+            <p>Reservations: +1 (555) 123-4567<br>General: +1 (555) 123-4568<br>Mon-Sun: 11AM - 11PM</p>
+          </div>
+
+          <div class="contact-card" data-reveal="right">
+            <div class="contact-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@grilli.com<br>reservations@grilli.com<br>events@grilli.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-form-container" data-reveal="left">
+            <h2>Send Us a Message</h2>
+            <p>We'd love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">
+                    <ion-icon name="person"></ion-icon>
+                    Your Name
+                  </label>
+                  <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <ion-icon name="mail"></ion-icon>
+                    Email Address
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">
+                    <ion-icon name="call"></ion-icon>
+                    Phone Number
+                  </label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">
+                    <ion-icon name="chatbox"></ion-icon>
+                    Subject
+                  </label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="reservation">Reservation Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="event">Private Event</option>
+                    <option value="catering">Catering Services</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  <ion-icon name="create"></ion-icon>
+                  Your Message
+                </label>
+                <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <ion-icon name="send"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <div class="map-container" data-reveal="right">
+            <h2>Find Us Here</h2>
+            <div class="map-placeholder">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841!2d-73.9875!3d40.7589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMTUuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="450" 
+                style="border:0; border-radius: 15px;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
+
+            <div class="hours-card">
+              <h3>Opening Hours</h3>
+              <div class="hours-list">
+                <div class="hours-item">
+                  <span>Monday - Thursday</span>
+                  <span>11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="hours-item">
+                  <span>Friday - Saturday</span>
+                  <span>11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="hours-item">
+                  <span>Sunday</span>
+                  <span>12:00 PM - 9:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">FAQ</p>
+          <h2 class="section-title" data-reveal="bottom">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item" data-reveal="left">
+            <button class="faq-question">
+              <span>Do I need a reservation?</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="faq-answer">
+              <p>While walk-ins are welcome, we highly recommend making a reservation, especially for dinner service and weekends, to ensure we have a table ready for you.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-reveal="left">
+            <button class="faq-question">
+              <span>Do you accommodate dietary restrictions?</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! We offer vegetarian, vegan, gluten-free, and other dietary options. Please inform us of any restrictions when making your reservation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-reveal="left">
+            <button class="faq-question">
+              <span>Is there parking available?</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we have complimentary valet parking for all our guests. Street parking is also available nearby.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-reveal="left">
+            <button class="faq-question">
+              <span>Do you host private events?</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We have private dining rooms perfect for celebrations, corporate events, and special occasions. Contact us at events@grilli.com for more information.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-reveal="left">
+            <button class="faq-question">
+              <span>What is your cancellation policy?</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="faq-answer">
+              <p>We kindly ask for at least 24 hours notice for cancellations. For large parties (8+ guests), we require 48 hours notice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="logo-text">Grilli</h2>
+          <p>Experience culinary excellence in every bite.</p>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><ion-icon name="location-outline"></ion-icon> 123 Restaurant St, Food City</li>
+            <li><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</li>
+            <li><ion-icon name="mail-outline"></ion-icon> hello@grilli.com</li>
+            <li><ion-icon name="time-outline"></ion-icon> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grilli Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" data-back-to-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/contact.js"></script>
+</body>
+</html>

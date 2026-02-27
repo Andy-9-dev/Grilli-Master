@@ -1,0 +1,12 @@
+{
+  "name": "grilli-restaurant",
+  "version": "1.0.0",
+  "description": "Stunning restaurant website with light blue and green theme",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  },
+  "keywords": ["restaurant", "website", "food", "dining"],
+  "author": "Grilli Team",
+  "license": "ISC"
+}

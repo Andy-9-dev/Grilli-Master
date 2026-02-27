@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table - Grilli Restaurant</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/booking.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <p class="preloader-text">Grilli</p>
+    </div>
+  </div>
+
+  <header class="header active" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1 class="logo-text">Grilli</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="menu.html" class="navbar-link">Menu</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+          <li><a href="booking.html" class="navbar-link active">Reservations</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html" class="btn btn-primary">
+        <span>Book a Table</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="booking-hero">
+      <div class="container">
+        <h1 class="page-title" data-reveal="bottom">Reserve Your Table</h1>
+        <p class="page-subtitle" data-reveal="bottom">Book your perfect dining experience with us</p>
+      </div>
+    </section>
+
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-info" data-reveal="left">
+            <h2>Why Book With Us?</h2>
+            <div class="info-card">
+              <div class="info-icon">
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+              <div>
+                <h3>Instant Confirmation</h3>
+                <p>Get immediate booking confirmation via email</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <ion-icon name="restaurant"></ion-icon>
+              </div>
+              <div>
+                <h3>Best Tables</h3>
+                <p>Choose from our premium seating options</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <ion-icon name="time"></ion-icon>
+              </div>
+              <div>
+                <h3>Flexible Timing</h3>
+                <p>Book any time that suits your schedule</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <ion-icon name="gift"></ion-icon>
+              </div>
+              <div>
+                <h3>Special Occasions</h3>
+                <p>Let us make your celebration memorable</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <h3>Need Help?</h3>
+              <p><ion-icon name="call"></ion-icon> +1 (555) 123-4567</p>
+              <p><ion-icon name="mail"></ion-icon> reservations@grilli.com</p>
+            </div>
+          </div>
+
+          <div class="booking-form-container" data-reveal="right">
+            <form class="booking-form" id="bookingForm">
+              <h2>Reservation Details</h2>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">
+                    <ion-icon name="person"></ion-icon>
+                    Full Name
+                  </label>
+                  <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <ion-icon name="mail"></ion-icon>
+                    Email Address
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">
+                    <ion-icon name="call"></ion-icon>
+                    Phone Number
+                  </label>
+                  <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                  <label for="guests">
+                    <ion-icon name="people"></ion-icon>
+                    Number of Guests
+                  </label>
+                  <select id="guests" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8+ People</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">
+                    <ion-icon name="calendar"></ion-icon>
+                    Reservation Date
+                  </label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="time">
+                    <ion-icon name="time"></ion-icon>
+                    Preferred Time
+                  </label>
+                  <select id="time" name="time" required>
+                    <option value="">Select time</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="occasion">
+                  <ion-icon name="star"></ion-icon>
+                  Special Occasion (Optional)
+                </label>
+                <select id="occasion" name="occasion">
+                  <option value="">Select occasion</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="business">Business Dinner</option>
+                  <option value="date">Romantic Date</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  Special Requests (Optional)
+                </label>
+                <textarea id="message" name="message" rows="4" placeholder="Any dietary restrictions, seating preferences, or special requests..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Confirm Reservation</span>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-gallery">
+      <div class="container">
+        <h2 class="section-title" data-reveal="bottom">Our Dining Spaces</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Main dining area">
+            <div class="gallery-overlay">
+              <h3>Main Dining Hall</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Private dining">
+            <div class="gallery-overlay">
+              <h3>Private Rooms</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Outdoor seating">
+            <div class="gallery-overlay">
+              <h3>Outdoor Terrace</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=600&q=80" alt="Bar area">
+            <div class="gallery-overlay">
+              <h3>Bar & Lounge</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="logo-text">Grilli</h2>
+          <p>Experience culinary excellence in every bite.</p>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><ion-icon name="location-outline"></ion-icon> 123 Restaurant St, Food City</li>
+            <li><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</li>
+            <li><ion-icon name="mail-outline"></ion-icon> hello@grilli.com</li>
+            <li><ion-icon name="time-outline"></ion-icon> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grilli Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" data-back-to-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/booking.js"></script>
+</body>
+</html>

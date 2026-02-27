@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grilli - Exquisite Culinary Experience</title>
+  <meta name="description" content="Experience the finest dining with fresh ingredients and stunning ambiance">
+  
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-circle"></div>
+      <p class="preloader-text">Grilli</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1 class="logo-text">Grilli</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" data-nav-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link active">Home</a></li>
+          <li><a href="menu.html" class="navbar-link">Menu</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
+          <li><a href="booking.html" class="navbar-link">Reservations</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html" class="btn btn-primary">
+        <span>Book a Table</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-slider" data-hero-slider>
+        <div class="hero-slide active" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" alt="Delicious food" class="hero-bg">
+          <div class="hero-content">
+            <p class="hero-subtitle" data-reveal="left">Welcome to Grilli</p>
+            <h2 class="hero-title" data-reveal="left">Where Every Dish<br>Tells a Story</h2>
+            <p class="hero-text" data-reveal="left">Experience culinary excellence with fresh, locally-sourced ingredients</p>
+            <a href="menu.html" class="btn btn-secondary" data-reveal="left">
+              <span>Explore Menu</span>
+              <ion-icon name="restaurant-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80" alt="Gourmet cuisine" class="hero-bg">
+          <div class="hero-content">
+            <p class="hero-subtitle" data-reveal="left">Exquisite Flavors</p>
+            <h2 class="hero-title" data-reveal="left">Crafted with<br>Passion & Love</h2>
+            <p class="hero-text" data-reveal="left">Indulge in a symphony of flavors that dance on your palate</p>
+            <a href="booking.html" class="btn btn-secondary" data-reveal="left">
+              <span>Reserve Now</span>
+              <ion-icon name="calendar-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-slide" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Fine dining" class="hero-bg">
+          <div class="hero-content">
+            <p class="hero-subtitle" data-reveal="left">Unforgettable Moments</p>
+            <h2 class="hero-title" data-reveal="left">Create Memories<br>Over Great Food</h2>
+            <p class="hero-text" data-reveal="left">Perfect ambiance for celebrations, dates, and special occasions</p>
+            <a href="gallery.html" class="btn btn-secondary" data-reveal="left">
+              <span>View Gallery</span>
+              <ion-icon name="images-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn prev" data-prev-btn>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="slider-btn next" data-next-btn>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card" data-reveal="bottom">
+            <div class="feature-icon">
+              <ion-icon name="leaf-outline"></ion-icon>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>Locally sourced, organic produce delivered daily</p>
+          </div>
+
+          <div class="feature-card" data-reveal="bottom">
+            <div class="feature-icon">
+              <ion-icon name="restaurant-outline"></ion-icon>
+            </div>
+            <h3>Expert Chefs</h3>
+            <p>Award-winning culinary masters at your service</p>
+          </div>
+
+          <div class="feature-card" data-reveal="bottom">
+            <div class="feature-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <h3>Quick Service</h3>
+            <p>Efficient service without compromising quality</p>
+          </div>
+
+          <div class="feature-card" data-reveal="bottom">
+            <div class="feature-icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+            <h3>Made with Love</h3>
+            <p>Every dish crafted with passion and care</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-content" data-reveal="left">
+          <p class="section-subtitle">Our Story</p>
+          <h2 class="section-title">A Journey of<br>Culinary Excellence</h2>
+          <p class="section-text">
+            For over two decades, Grilli has been serving exceptional cuisine that combines traditional recipes with modern innovation. Our commitment to quality and passion for food has made us a beloved destination for food enthusiasts.
+          </p>
+          <p class="section-text">
+            Every dish is a masterpiece, carefully prepared by our talented chefs using the finest ingredients. We believe in creating not just meals, but memorable experiences that bring people together.
+          </p>
+          <a href="about.html" class="btn btn-primary">
+            <span>Learn More</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="about-image" data-reveal="right">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80" alt="Restaurant interior">
+          <div class="about-badge">
+            <span class="badge-number">20+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="menu-preview">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">Discover</p>
+          <h2 class="section-title" data-reveal="bottom">Our Signature Dishes</h2>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Gourmet Salad">
+              <div class="menu-card-badge">Popular</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Mediterranean Salad</h3>
+              <p>Fresh greens, feta cheese, olives, and house dressing</p>
+              <div class="menu-card-footer">
+                <span class="price">$18.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Gourmet Pizza">
+              <div class="menu-card-badge">Chef's Special</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Truffle Mushroom Pizza</h3>
+              <p>Wood-fired pizza with truffle oil and wild mushrooms</p>
+              <div class="menu-card-footer">
+                <span class="price">$24.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80" alt="Pasta Dish">
+            </div>
+            <div class="menu-card-content">
+              <h3>Seafood Linguine</h3>
+              <p>Fresh pasta with prawns, mussels, and garlic butter</p>
+              <div class="menu-card-footer">
+                <span class="price">$28.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Steak">
+              <div class="menu-card-badge">Premium</div>
+            </div>
+            <div class="menu-card-content">
+              <h3>Wagyu Beef Steak</h3>
+              <p>Prime cut with roasted vegetables and red wine jus</p>
+              <div class="menu-card-footer">
+                <span class="price">$45.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80" alt="Sushi">
+            </div>
+            <div class="menu-card-content">
+              <h3>Premium Sushi Platter</h3>
+              <p>Assorted fresh sushi with wasabi and soy sauce</p>
+              <div class="menu-card-footer">
+                <span class="price">$32.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-reveal="bottom">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Dessert">
+            </div>
+            <div class="menu-card-content">
+              <h3>Chocolate Lava Cake</h3>
+              <p>Warm chocolate cake with vanilla ice cream</p>
+              <div class="menu-card-footer">
+                <span class="price">$12.99</span>
+                <button class="btn-icon">
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer" data-reveal="bottom">
+          <a href="menu.html" class="btn btn-primary">
+            <span>View Full Menu</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">Testimonials</p>
+          <h2 class="section-title" data-reveal="bottom">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-reveal="left">
+            <div class="testimonial-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="testimonial-text">"Absolutely incredible experience! The food was divine and the atmosphere was perfect for our anniversary dinner. Will definitely be returning!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Johnson">
+              <div>
+                <h4>Sarah Johnson</h4>
+                <p>Food Enthusiast</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal="bottom">
+            <div class="testimonial-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="testimonial-text">"Best restaurant in town! Every dish is a masterpiece. The chef's attention to detail is remarkable. Highly recommended for special occasions."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Michael Chen">
+              <div>
+                <h4>Michael Chen</h4>
+                <p>Restaurant Critic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal="right">
+            <div class="testimonial-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="testimonial-text">"From the moment we walked in, we were treated like royalty. The service is impeccable and the food is out of this world. A true gem!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=5" alt="Emily Rodriguez">
+              <div>
+                <h4>Emily Rodriguez</h4>
+                <p>Regular Guest</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content" data-reveal="zoom">
+          <h2>Ready for an Unforgettable Dining Experience?</h2>
+          <p>Book your table now and let us create magical moments for you</p>
+          <a href="booking.html" class="btn btn-secondary">
+            <span>Make a Reservation</span>
+            <ion-icon name="calendar-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle" data-reveal="bottom">Follow Us</p>
+          <h2 class="section-title" data-reveal="bottom">@GrilliRestaurant</h2>
+        </div>
+
+        <div class="instagram-grid">
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+          <a href="#" class="instagram-item" data-reveal="zoom">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&q=80" alt="Food">
+            <div class="instagram-overlay">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="logo-text">Grilli</h2>
+          <p>Experience culinary excellence in every bite. Join us for an unforgettable dining journey.</p>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><ion-icon name="location-outline"></ion-icon> 123 Restaurant St, Food City</li>
+            <li><ion-icon name="call-outline"></ion-icon> +1 (555) 123-4567</li>
+            <li><ion-icon name="mail-outline"></ion-icon> hello@grilli.com</li>
+            <li><ion-icon name="time-outline"></ion-icon> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and updates</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">
+              <ion-icon name="send-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Grilli Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#home" class="back-to-top" data-back-to-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
