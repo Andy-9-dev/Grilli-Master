@@ -1,54 +1,87 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/grilli)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/grilli?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/grilli?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/CjVGp5kGHxA?style=social)](https://youtu.be/CjVGp5kGHxA)
+# Grilli Restaurant Website
 
-  <br />
-  <br />
+A stunning, modern restaurant website featuring a beautiful light blue and green color scheme with smooth animations and multiple pages.
 
-  <h2 align="center">Grilli - Restaurant Website</h2>
+## Features
 
-  Grilli is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+- 🎨 Beautiful gradient design with light blue and green colors
+- 📱 Fully responsive across all devices
+- ✨ Smooth animations and transitions
+- 🍽️ Multiple pages: Home, Menu, About, Gallery, Booking, Contact
+- 🖼️ Interactive image gallery with lightbox
+- 📋 Filterable menu with categories
+- 📅 Booking system with form validation
+- 💬 Contact form with FAQ accordion
+- 🎭 Hero slider with auto-play
+- ⭐ Customer testimonials section
 
-  <a href="https://codewithsadee.github.io/grilli/"><strong>➥ Live Demo</strong></a>
+## Pages
 
-</div>
+1. **Home** - Hero slider, features, menu preview, testimonials, Instagram feed
+2. **Menu** - Filterable menu items (Appetizers, Mains, Desserts, Drinks)
+3. **About** - Restaurant story, team members, values, statistics
+4. **Gallery** - Filterable image gallery with lightbox viewer
+5. **Booking** - Reservation form with instant confirmation
+6. **Contact** - Contact form, map, opening hours, FAQ
 
-<br />
-
-### Demo Screeshots
-
-![Grilli Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Grilli** locally, run this command on your git bash:
-
-Linux and macOS:
+## Local Development
 
 ```bash
-sudo git clone https://github.com/codewithsadee/grilli.git
+# Install dependencies (optional, uses npx)
+npm install
+
+# Start development server
+npm run dev
+
+# Open browser to http://localhost:3000
 ```
 
-Windows:
+## Deployment
 
+### Deploy to Vercel
+
+1. Install Vercel CLI (optional):
 ```bash
-git clone https://github.com/codewithsadee/grilli.git
+npm i -g vercel
 ```
 
-### Contact
+2. Deploy:
+```bash
+vercel
+```
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Or simply:
+- Push to GitHub
+- Import project in Vercel dashboard
+- Deploy automatically
 
-### License
+### Deploy to Netlify
 
-[MIT](https://choosealicense.com/licenses/mit/)
+1. Drag and drop the `grilli-master` folder to Netlify
+2. Or connect your GitHub repository
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Custom Properties, Grid, Flexbox)
+- Vanilla JavaScript
+- Google Fonts (Playfair Display, Poppins)
+- Ionicons
+- Unsplash Images
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+ISC
+
+## Credits
+
+Design & Development: Grilli Team
+Images: Unsplash
+Icons: Ionicons
