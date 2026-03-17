@@ -123,13 +123,13 @@ button {
 }
 
 .btn-primary {
-  background: var(--gradient-1);
-  color: var(--white);
-  box-shadow: 0 5px 20px rgba(77, 208, 225, 0.3);
+  background: var(--white);
+  color: var(--primary-blue);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
 }
 
 .btn-primary::before {
-  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-green) 100%);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .btn-secondary {
@@ -209,16 +209,18 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 0;
-  background: transparent;
+  padding: 1.5rem 0;
+  background: var(--gradient-1);
   z-index: 1000;
   transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(77, 208, 225, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .header.active {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
+  background: var(--gradient-1);
+  box-shadow: 0 8px 30px rgba(77, 208, 225, 0.3);
+  padding: 1.2rem 0;
 }
 
 .header .container {
@@ -231,34 +233,38 @@ button {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--white);
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-list {
   display: flex;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .navbar-link {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
   position: relative;
   transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-link::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -8px;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--gradient-1);
-  transition: width 0.3s ease;
+  height: 3px;
+  background: var(--white);
+  transition: width 0.4s ease;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
 .navbar-link:hover::after,
@@ -268,7 +274,8 @@ button {
 
 .navbar-link:hover,
 .navbar-link.active {
-  color: var(--primary-blue);
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-open-btn,
