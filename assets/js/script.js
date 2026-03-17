@@ -82,17 +82,22 @@ if (heroSlider && heroSlides.length > 0) {
     clearInterval(autoSlideInterval);
   };
 
-  nextBtn?.addEventListener('click', () => {
-    nextSlide();
-    stopAutoSlide();
-    startAutoSlide();
-  });
+  // Only add click handlers if buttons exist
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  }
 
-  prevBtn?.addEventListener('click', () => {
-    prevSlide();
-    stopAutoSlide();
-    startAutoSlide();
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+  }
 
   // Start auto slide
   startAutoSlide();

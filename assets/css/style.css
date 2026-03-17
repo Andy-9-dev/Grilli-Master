@@ -123,13 +123,13 @@ button {
 }
 
 .btn-primary {
-  background: var(--white);
-  color: var(--primary-blue);
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+  background: var(--gradient-1);
+  color: var(--white);
+  box-shadow: 0 5px 20px rgba(77, 208, 225, 0.3);
 }
 
 .btn-primary::before {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-green) 100%);
 }
 
 .btn-secondary {
@@ -210,16 +210,16 @@ button {
   left: 0;
   width: 100%;
   padding: 1.5rem 0;
-  background: var(--gradient-1);
+  background: rgba(255, 255, 255, 0.92);
   z-index: 1000;
   transition: var(--transition);
-  box-shadow: 0 4px 20px rgba(77, 208, 225, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
 }
 
 .header.active {
-  background: var(--gradient-1);
-  box-shadow: 0 8px 30px rgba(77, 208, 225, 0.3);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 1.2rem 0;
 }
 
@@ -233,9 +233,11 @@ button {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-list {
@@ -244,14 +246,11 @@ button {
 }
 
 .navbar-link {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   position: relative;
   transition: var(--transition);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-link::after {
@@ -260,11 +259,10 @@ button {
   bottom: -8px;
   left: 0;
   width: 0;
-  height: 3px;
-  background: var(--white);
+  height: 2px;
+  background: var(--gradient-1);
   transition: width 0.4s ease;
   border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
 .navbar-link:hover::after,
@@ -274,8 +272,7 @@ button {
 
 .navbar-link:hover,
 .navbar-link.active {
-  color: var(--white);
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--primary-blue);
 }
 
 .nav-open-btn,
@@ -360,7 +357,7 @@ button {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.2);
